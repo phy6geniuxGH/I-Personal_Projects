@@ -1,7 +1,7 @@
 //Randomicity based on Gaussian Distribution 
 
 let RandWalker = [];
-let amountWalker = 200;
+let amountWalker = 1000;
 let fixed = true;
 let probSet = true;
 
@@ -26,7 +26,12 @@ function setup() {
   for(let i = 0; i <= amountWalker;i++){
     if (fixed){
       loc = [random(-width/2,width/2),random(-height/2,height/2)];
-      step = [random(-step[0],step[0]),random(-step[1],step[1])];
+      step = [random(-1,1),random(-1,1)];
+      sRGBA = [255,255,255,random(0,255)];
+      fRGBA = sRGBA;
+      sW = random(2,4);
+      let s = random(0,5);
+      dimSize = [s,s];
       RandWalker[i] = new RandomWalker(loc, step, fRGBA, sRGBA, sW, dimSize,probSet,prob);
     }
     else{
