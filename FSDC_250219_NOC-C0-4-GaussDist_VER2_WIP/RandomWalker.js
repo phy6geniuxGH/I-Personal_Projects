@@ -1,5 +1,5 @@
 class RandomWalker{
-  constructor(loc,step,fRGBA,sRGBA,sW,dimSize,probSet,prob){
+  constructor(loc,step,fRGBA,sRGBA,sW,dimSize,probSet,prob, flick){
     this.loc = loc;
     this.stepsize = step;
     this.fillRGBA = fRGBA;
@@ -8,12 +8,18 @@ class RandomWalker{
     this.dim_size = dimSize;
     this.probSet = probSet;
     this.prob = prob;
+    this.flickering = flick;
   }
   display(){
-    stroke(this.strokeRGBA);
-    fill(this.fillRGBA);
-    ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
-    
+    if (this.flickering){
+      stroke(random(this.strokeRGBA[3]))
+      fill(this.fillRGBA);
+      ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
+    } else {
+      stroke(this.strokeRGBA)
+      fill(this.fillRGBA);
+      ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
+    }
   }
   movement(){
     let r = random(0,1);
