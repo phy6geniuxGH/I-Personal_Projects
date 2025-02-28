@@ -5,11 +5,12 @@
 ***************/
 
 let RandWalker = [];
-let amountWalker = 1000;
+let amountWalker = 500;
 let probSet = true;
 let flick = true;
 let prob = 1.0;
 let still_background = false;
+let shine = true;
 
 /***************
 Main Program
@@ -20,12 +21,12 @@ function setup() {
   for(let i = 0; i <= amountWalker;i++){
     loc = [random(-width/2,width/2),random(-height/2,height/2)];
     step = [random(-1,1),random(-1,1)];
-    sRGBA = [255,255,255,random(0,255)];
+    sRGBA = [random(0,255),random(0,255),random(0,255),random(0,255)];
     fRGBA = sRGBA;
     sW = random(2,4);
     let s = random(0,5);
     dimSize = [s,s];
-    RandWalker[i] = new RandomWalker(loc, step, fRGBA, sRGBA, sW, dimSize,probSet,prob, flick);
+    RandWalker[i] = new RandomWalker(loc, step, fRGBA, sRGBA, sW, dimSize,probSet,prob, flick,shine);
   }
   if(still_background){
     background(0);
