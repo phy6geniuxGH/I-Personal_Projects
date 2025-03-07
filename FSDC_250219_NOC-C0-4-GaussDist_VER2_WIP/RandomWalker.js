@@ -14,6 +14,8 @@ class RandomWalker{
     this.shine = shine
   }
   display(){
+    stroke(this.strokeRGBA);
+    fill(this.fillRGBA);
     if(this.shine){
       let shine_len_x = randomGaussian(5,5);
       let shine_len_y = randomGaussian(5,5)
@@ -29,13 +31,9 @@ class RandomWalker{
       endShape();
     }
     if (this.flickering){
-      stroke(this.strokeRGBA);
-      fill(this.fillRGBA);
       ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
     
     } else {
-      stroke(this.strokeRGBA)
-      fill(this.fillRGBA);
       ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
     }
   }
