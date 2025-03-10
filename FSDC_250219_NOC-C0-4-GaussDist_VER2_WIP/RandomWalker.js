@@ -32,6 +32,9 @@ class RandomWalker{
     }
     if (this.flickering){
       ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
+      fill(0,0);
+      strokeWeight(0.5);
+      ellipse(this.loc[0], this.loc[1], this.dim_size[0]*5*cos(PI*frameCount/60), this.dim_size[1]*5*sin(PI*frameCount/60));
     
     } else {
       ellipse(this.loc[0], this.loc[1], this.dim_size[0], this.dim_size[1]);
