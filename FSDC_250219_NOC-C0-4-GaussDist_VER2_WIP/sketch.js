@@ -5,7 +5,7 @@
 ***************/
 
 let RandWalker = [];
-let amountWalker = 200;
+let amountWalker = 50;
 let probSet = true;
 let flick = true;
 let prob = 1.0;
