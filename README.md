@@ -4,3 +4,4 @@ A repository of my personal projects
 - Natural Language Processing
 - Deep Learning
 - Numerical Simulations
+- Machine Learning
