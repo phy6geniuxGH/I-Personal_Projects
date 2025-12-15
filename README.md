@@ -5,3 +5,4 @@ A repository of my personal projects
 - Projects related to Deep Learning
 - Projects related to Numerical Simulations
 - Projects related to Machine Learning
+- Projects related to Time Series Forecasting
