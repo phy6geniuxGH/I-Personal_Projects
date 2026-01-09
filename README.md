@@ -7,5 +7,6 @@ A repository of my personal projects
 - Projects related to Machine Learning
 - Projects related to Time Series Forecasting
 - Projects related to Computational Physics
+- Project Code Snippets, working prototypes
 ## Project Titles:
 - Moving Sparkles
