@@ -11,5 +11,6 @@ A repository of my personal projects
 - Projects related to Frontend Development
 - Projects related to Backend Development
 - Projects related to Simple Game Development
+- Projects related to Desktop Applications
 ## Project Titles:
 - Moving Sparkles
